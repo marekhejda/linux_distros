@@ -1,0 +1,55 @@
+#!/bin/bash
+
+mkdir linux_distros
+cd linux_distros
+mkdir {amazon-linux,debian,centos,oracle-linux,rhel,sles,ubuntu}
+cd debian
+mkdir {bullseye,buster,etch,hamm,jessie,lenny,potato,sarge,slink,squeeze,stretch,wheezy,woody}
+touch {bullseye,buster,etch,hamm,jessie,lenny,potato,sarge,slink,squeeze,stretch,wheezy,woody}/image.iso
+cd ..
+cd centos
+mkdir {centos6,censto7}
+touch {centos6,censto7}/image.iso
+cd ..
+cd oracle-linux
+mkdir {ol5,ol6,ol7,ol8}
+touch {ol5,ol6,ol7,ol8}/image.iso
+cd ..
+cd rhel
+mkdir {rhel5,rhel6,rhel7,rhel8}
+touch {rhel5,rhel6,rhel7,rhel8}/image.iso
+cd ..
+cd sles
+mkdir -p sles10/{sles10-sp1,sles10-sp2,sles10-sp3}
+touch sles10/{sles10-sp1,sles10-sp2,sles10-sp3}/image.iso
+mkdir -p sles11/{sles11-sp1,sles11-sp2,sles11-sp3}
+touch sles11/{sles11-sp1,sles11-sp2,sles11-sp3}/image.iso
+mkdir -p sles12/{sles12-sp1,sles12-sp2,sles12-sp3}
+touch sles12/{sles12-sp1,sles12-sp2,sles12-sp3}/image.iso
+mkdir -p sles13/{sles13-sp1,sles13-sp2,sles13-sp3}
+touch sles13/{sles13-sp1,sles13-sp2,sles13-sp3}/image.iso
+mkdir -p sles14/{sles14-sp1,sles14-sp2,sles14-sp3}
+touch sles14/{sles14-sp1,sles14-sp2,sles14-sp3}/image.iso
+mkdir -p sles15/{sles15-sp1,sles15-sp2,sles15-sp3}
+touch sles15/{sles15-sp1,sles15-sp2,sles15-sp3}/image.iso
+mkdir -p sles16/{sles16-sp1,sles16-sp2,sles16-sp3}
+touch sles16/{sles16-sp1,sles16-sp2,sles16-sp3}/image.iso
+mkdir -p sles9/{sles9-sp1,sles9-sp2,sles9-sp3}
+touch sles9/{sles9-sp1,sles9-sp2,sles9-sp3}/image.iso
+cd ..
+cd ubuntu
+mkdir {edubuntu,kubuntu,lubuntu,mythubuntu,ubuntu,ubuntu-mate,ubuntu-studio,xubuntu}
+touch {edubuntu,kubuntu,lubuntu,mythubuntu,ubuntu-mate,ubuntu-studio,xubuntu}/image.iso
+cd ubuntu
+mkdir {artful-aardvark,bionic-beaverb,reezy-badger,cosmic-cuttlefish,dapper-drake,disco-dingo,edgy-eft,eoan-ermine,feisty-fawn,focal-fossa}
+touch {artful-aardvark,bionic-beaverb,reezy-badger,cosmic-cuttlefish,dapper-drake,disco-dingo,edgy-eft,eoan-ermine,feisty-fawn,focal-fossa}/image.iso
+mkdir {gutsy-gibbon,hardy-heron,hoary-hedgehog,impish-indri,intrepid-ibex,jaunty-jackalope,karmic-koala,lucid-lynx,maverick-meerkat}
+touch {gutsy-gibbon,hardy-heron,hoary-hedgehog,impish-indri,intrepid-ibex,jaunty-jackalope,karmic-koala,lucid-lynx,maverick-meerkat}/image.iso
+mkdir {natty-narwhal,oneiric-ocelot,precise-pangolin,quantal-quetzal,raring-ringtail,saucy-salamander,trusty-tahr,utopic-unicorn}
+touch {natty-narwhal,oneiric-ocelot,precise-pangolin,quantal-quetzal,raring-ringtail,saucy-salamander,trusty-tahr,utopic-unicorn}/image.iso
+mkdir {vivid-vervet,warty-warthog,wily-werewolf,xenial-xerus,yakkety-yak,zesty-zapus}
+touch {vivid-vervet,warty-warthog,wily-werewolf,xenial-xerus,yakkety-yak,zesty-zapus}/image.iso
+cd ..
+cd ..
+cd ..
+tree linux_distros
